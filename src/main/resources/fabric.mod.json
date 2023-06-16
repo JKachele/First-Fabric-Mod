@@ -1,37 +1,33 @@
 {
 	"schemaVersion": 1,
-	"id": "modid",
+	"id": "firstmod",
 	"version": "${version}",
-	"name": "Example mod",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"name": "First mod",
+	"description": "First Fabric Mod for minecraft 1.20",
 	"authors": [
-		"Me!"
+		"Justin Kachele"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
 		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
-	"license": "CC0-1.0",
+	"license": "MPL-2.0",
 	"icon": "assets/modid/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.example.ExampleMod"
+			"com.jkachele.firstmod.FirstMod"
 		],
 		"client": [
-			"com.example.ExampleModClient"
+			"com.jkachele.firstmod.FirstModClient"
 		]
 	},
 	"mixins": [
-		"modid.mixins.json",
-		{
-			"config": "modid.client.mixins.json",
-			"environment": "client"
-		}
-	],
+		"firstmod.mixins.json"
+    ],
 	"depends": {
 		"fabricloader": ">=0.14.21",
-		"minecraft": "~1.20.1",
+		"minecraft": "~1.20",
 		"java": ">=17",
 		"fabric-api": "*"
 	},
