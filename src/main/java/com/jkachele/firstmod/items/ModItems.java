@@ -38,6 +38,7 @@ public class ModItems {
             .register(entries -> entries.add(item));
     }
 
+    
     public static void registerModItems() {
         FirstMod.LOGGER.debug("Registering Mod Items for " + FirstMod.MOD_ID);
         addItemsToGroup();

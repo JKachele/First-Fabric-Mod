@@ -7,6 +7,7 @@ package com.jkachele.firstmod;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import com.jkachele.firstmod.items.ModItemGroup;
 import com.jkachele.firstmod.items.ModItems;
 
 import net.fabricmc.api.ModInitializer;
@@ -17,7 +18,7 @@ public class FirstMod implements ModInitializer {
 
     @Override
     public void onInitialize() {
-        // ModItemGroup.registerItemGroups();
+        ModItemGroup.registerItemGroups();
         ModItems.registerModItems();
     }
 }
